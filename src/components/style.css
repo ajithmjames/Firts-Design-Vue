@@ -1,0 +1,10 @@
+@font-face {
+    font-family: poppinsBold1;
+    src: url('../assets/Font/Poppins-Black.ttf');
+}
+
+.myclass1{
+    font-size: 12px;
+    color: black
+    font-family:poppinsBlack1;
+}
