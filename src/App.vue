@@ -135,9 +135,9 @@
     </div>
     <v-layout wrap>
       <v-flex lg6 pl-15 pt-12 v-for="item in 2" :key="item">
-        <v-card flat class="mx-7">
+        <v-card flat class="pad3">
           <v-layout wrap>
-            <v-flex lg2 pl-1>
+            <v-flex lg2>
               <v-img src="./assets/2.2.jpg" width="100" height="100"></v-img>
             </v-flex>
             <v-flex lg10>
@@ -345,7 +345,7 @@
       </v-layout>
     </div>
     <div>
-      <v-card>
+      <v-card flat>
         <v-layout wrap>
           <v-flex class="he2">
             <center>
@@ -375,22 +375,54 @@
         </v-layout>
         <v-flex>
           <center>
-            <div class="fn5" style="font-size: 300%; color: black">
+            <v-flex class="fn5" style="font-size: 300%; color: black">
               We Invite you to Explore !
-            </div>
-            <v-layout lg12>
-
-              <v-layout justify-center lg6>
+            </v-flex>
+            <!-- <v-layout lg12>
+              <v-layout>
                 <v-flex class="fn4" style="font-size: 30px"> History </v-flex>
-              </v-layout>
-              <v-layout lg6>
+
                 <v-flex>
                   <v-icon color="black">mdi-arrow-right</v-icon>
                 </v-flex>
               </v-layout>
-            </v-layout>
+            </v-layout> -->
           </center>
+          <v-flex style="padding-left: 39%">
+            <v-flex class="fn4;" style="font-size: 35px"
+              >History
+              <v-icon
+                color="black"
+                style="padding-left: 19%; padding-bottom: 3%"
+                >mdi-arrow-right</v-icon
+              ></v-flex
+            >
+              <v-flex class="rectangle"></v-flex>
+
+            <v-flex class="fn4" style="font-size: 35px"
+              >Team
+              <v-icon
+                color="black"
+                style="padding-left: 21%; padding-bottom: 3%"
+                >mdi-arrow-right</v-icon
+              ></v-flex
+            >
+
+            <v-flex class="fn4" style="font-size: 35px"
+              >Advisory Group
+              <v-icon color="black" style="padding-left: 6%; padding-bottom: 3%"
+                >mdi-arrow-right</v-icon
+              ></v-flex
+            >
+          </v-flex>
         </v-flex>
+        <v-layout wrap>
+          <v-flex text-center class="fn4" style="font-size:25px; padding-top: 4%" >
+            Lorem Ipsum is simply dummy text of the printing and<br> typesetting
+            industry. Lorem Ipsum has been the industry's<br> standard dummy text
+            ever since the 1500s
+          </v-flex>
+        </v-layout>
       </v-card>
     </div>
   </v-app>
