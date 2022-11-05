@@ -29,7 +29,7 @@
         <v-flex xs12>
           <v-layout wrap style="width: 100%">
             <v-flex lg12 xs12>
-              <v-img src="./assets/6.jpg" max-width="100%" height="840px">
+              <v-img src="../assets/6.jpg" max-width="100%" height="840px">
                 <v-layout wrap>
                   <v-flex pt-5 lg12 class="fn3">
                     <center>
@@ -70,7 +70,7 @@
               <v-card flat class="mx-9">
                 <v-layout wrap>
                   <v-flex xs12>
-                    <v-img src="./assets/2.1.jpg"></v-img>
+                    <v-img src="../assets/2.1.jpg"></v-img>
                   </v-flex>
                   <v-flex xs12 py-2 class="fn5" style="font-size: 26px">
                     Contrary to popular belief, Lorem Ipsum is not<br />
@@ -91,7 +91,7 @@
               <v-card flat class="mx-9">
                 <v-layout wrap>
                   <v-flex xs12>
-                    <v-img src="./assets/2.2.jpg"></v-img>
+                    <v-img src="../assets/2.2.jpg"></v-img>
                   </v-flex>
                   <v-flex xs12 py-2 class="fn5" style="font-size: 26px">
                     Contrary to popular belief, Lorem Ipsum is not<br />
@@ -112,7 +112,7 @@
               <v-card flat class="mx-9">
                 <v-layout wrap>
                   <v-flex xs12>
-                    <v-img src="./assets/2.3.jpg"></v-img>
+                    <v-img src="../assets/2.3.jpg"></v-img>
                   </v-flex>
                   <v-flex xs12 py-2 class="fn5" style="font-size: 26px">
                     Contrary to popular belief, Lorem Ipsum is not<br />
@@ -138,7 +138,7 @@
         <v-card flat class="pad3">
           <v-layout wrap>
             <v-flex lg2>
-              <v-img src="./assets/2.2.jpg" width="100" height="100"></v-img>
+              <v-img src="../assets/2.2.jpg" width="100" height="100"></v-img>
             </v-flex>
             <v-flex lg10>
               <v-flex class="fn5" style="font-size: 26px">
@@ -198,7 +198,7 @@
                 <v-card dark style="background-color: green">
                   <v-layout wrap>
                     <v-flex xs12>
-                      <v-img src="./assets/3.1.jpg" height="115%" width="115%">
+                      <v-img src="../assets/3.1.jpg" height="115%" width="115%">
                         <v-flex class="st1" pl-4 pb-4> Upcoming </v-flex>
                         <v-card-title class="st2">
                           Remembrance Day
@@ -214,7 +214,7 @@
                   <v-img
                     class="white--text align-end"
                     height="240px"
-                    src="./assets/3.4.jpg"
+                    src="../assets/3.4.jpg"
                   >
                   </v-img>
                   <v-card-title class="fn5" style="font-size: 26px">
@@ -235,7 +235,7 @@
                   <v-img
                     class="white--text align-end"
                     height="240px"
-                    src="./assets/3.2.jpg"
+                    src="../assets/3.2.jpg"
                   >
                   </v-img>
                   <v-card-title class="fn5" style="font-size: 26px">
@@ -259,7 +259,7 @@
                         <v-img
                           class="white--text align-end"
                           height="240px"
-                          src="./assets/3.3.jpg"
+                          src="../assets/3.3.jpg"
                         >
                         </v-img>
                         <v-card-title class="fn5" style="font-size: 26px">
@@ -283,7 +283,7 @@
                         <v-img
                           class="white--text align-end"
                           height="240px"
-                          src="./assets/3.5.jpg"
+                          src="../assets/3.5.jpg"
                         >
                         </v-img>
                         <v-card-title class="fn5" style="font-size: 26px">
@@ -306,7 +306,7 @@
                         <v-img
                           class="white--text align-end"
                           height="240px"
-                          src="./assets/3.6.jpg"
+                          src="../assets/3.6.jpg"
                         >
                         </v-img>
                         <v-card-title class="fn5" style="font-size: 26px">
@@ -499,31 +499,3 @@
     </div>
   </v-app>
 </template>
-
-<script>
-import "./assets/style.css";
-export default {
-  data() {
-    return {
-      value: 50,
-
-      // d:{
-      //   a:5,
-      //   b:"string"
-      // },
-
-      newsList: [{}, {}],
-    };
-  },
-
-  mounted() {
-    this.getdata();
-  },
-
-  methods: {
-    getdata() {
-      console.log(this.value);
-    },
-  },
-};
-</script>
