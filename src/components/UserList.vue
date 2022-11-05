@@ -44,8 +44,14 @@
                       </td>
                       <td>{{ item.phone }}</td>
 
-                      <td><v-icon color="blue">mdi-account-eye</v-icon></td>
-                      <td><v-icon color="red">mdi-delete-empty</v-icon></td>
+                      <td><router-link
+                    :to="'/page5?id=' + item._id"
+                    style="text-decoration: none"
+                  >
+                        <v-btn icon ><v-icon color="blue" >mdi-account-eye</v-icon></v-btn>
+                        </router-link></td>
+
+                      <td><v-btn icon ><v-icon color="red">mdi-delete-empty</v-icon></v-btn></td>
                     </tr>
                   </tbody>
                 </template>

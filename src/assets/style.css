@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: popM;
-    src: url(./Font/Poppins-Medium.ttf);
+    src: url(./Font/Poppins-MediumItalic.ttf);
 }
 
 .fn2 {
@@ -24,64 +24,76 @@
     font-family: popL;
     src: url(./Font/Poppins-Light.ttf);
 }
+
 .fn3 {
     font-family: popL;
-    color:rgb(11, 0, 0);
+    color: rgb(11, 0, 0);
 }
+
 @font-face {
     font-family: popR;
     src: url(./Font/Poppins-Regular.ttf);
 }
+
 .fn4 {
     font-family: popR;
 }
+
 @font-face {
     font-family: kepl;
     src: url(./Font/Kepler\ Std\ Bold\ Semicondensed\ Subhead.otf);
 }
+
 .fn5 {
     font-family: kepl;
 }
-.pad3
-{
+
+.pad3 {
     padding-left: 3%;
     padding-right: 6%;
 }
-.st1{
-    position:absolute;bottom:100px;
+
+.st1 {
+    position: absolute;
+    bottom: 100px;
     font-family: popR;
     color: rgb(237, 203, 13);
-    font-size:30px;
+    font-size: 30px;
 }
-.st2{
-    position:absolute;bottom:60px;
-    font-family:kep1;
+
+.st2 {
+    position: absolute;
+    bottom: 60px;
+    font-family: kep1;
     color: rgb(255, 253, 251);
-    font-size:55px;
+    font-size: 55px;
 }
-.st3{
-    position:absolute;bottom:20px;
-    font-family:kep1;
+
+.st3 {
+    position: absolute;
+    bottom: 20px;
+    font-family: kep1;
     color: rgb(255, 253, 251);
-    font-size:28px;
-    
+    font-size: 28px;
+
 }
-.he1{
+
+.he1 {
     height: 400px;
 }
-.pad1
-{
-    
+
+.pad1 {
+
     padding-right: 2%;
-    
+
 }
-.pad2
-{
+
+.pad2 {
     padding-left: 2%;
 }
-.he2
-{
-    padding-top:  5cm;
+
+.he2 {
+    padding-top: 5cm;
 
 }
 
@@ -89,10 +101,9 @@
     width: 370px;
     height: 3px;
     background: rgb(221, 153, 69);
-  }
-    
-.rect2
-{
+}
+
+.rect2 {
     width: 850px;
     height: 3px;
     background: rgb(229, 148, 48);
