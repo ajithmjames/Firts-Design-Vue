@@ -5,7 +5,7 @@
         <!-- <div>
           <v-flex class="font-weight-black headline"> User List </v-flex>
         </div> -->
-        <v-card outlined>
+        <v-card outlined class="ma-4">
           <v-card-title>
             <span> <h3 class="blue--text">User List</h3></span>
             <v-spacer></v-spacer>
@@ -15,11 +15,12 @@
               @input="getData()"
               outlined
               v-model="search"
+              
             >
             </v-text-field>
           </v-card-title>
         </v-card>
-        <v-card>
+        <v-card class="ma-4">
           <v-layout wrap>
             <v-flex xs12>
               <v-simple-table>
@@ -42,7 +43,7 @@
                         {{ item.first_name }}&nbsp;&nbsp;
                         {{ item.last_name }}
                       </td>
-                      <td>{{ item.phone }}</td>
+                      <td >{{ item.phone }}</td>
 
                       <td><router-link
                     :to="'/page5?id=' + item._id"
@@ -117,40 +118,7 @@ export default {
           console.log(err);
         });
     },
-    ser() {
-      // localStorage.setItem("fromDateE", this.fromDate);
-      // localStorage.setItem("toDateE", this.toDate);
-      // localStorage.setItem("Esearch", this.apSearch);
-
-      this.appLoading = true;
-      axios({
-        url: "/admin/getall/users",
-        method: "post",
-        data: {
-          page: 1,
-          limit: 20,
-          //   keyword:this.Search,
-        },
-        headers: {
-          token: localStorage.getItem("token"),
-        },
-      })
-        .then((response) => {
-          this.appLoading = false;
-          if (response.data.status) {
-            this.user = response.data.data;
-            // this.pagelength = Math.ceil(response.data.totalLength / this.limit);
-          } else {
-            this.showsnackbar = true;
-            this.msg = response.data.msg;
-          }
-        })
-        .catch((err) => {
-          this.appLoading = false;
-          this.ServerError = true;
-          console.log(err);
-        });
-    },
+    
   },
 };
 </script>

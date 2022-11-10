@@ -4,14 +4,14 @@
       <v-flex xs12 sm12 md12 lg2 pr-0 class="hidden-sm-and-down">
         <v-navigation-drawer
           class="fixedSidebar"
-          v-model="sideNav"
+          v-model="sidebar"
           clipped
           width="100%"
-          height="125vh"
+          height="100%"
           permanent
           color="rgb(21, 95, 117)"
         >
-          <v-list>
+          <v-list >
             <v-list-item
               v-for="link in dashpanel"
               :key="link.text"
@@ -45,7 +45,7 @@
 export default {
   data() {
     return {
-      sidebar: true,
+      sidebar: false,
       dashpanel: [
         {
           icon: "mdi-view-dashboard-outline",

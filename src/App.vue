@@ -14,8 +14,7 @@
       <!-- <Headerxs/> -->
 
       <router-view> </router-view>
-
-      <!-- <Footer v-if="$route.name!= 'login'"/> -->
+      <Footer/>
     </v-main>
   </v-app>
 </template>
@@ -26,20 +25,17 @@ import "./assets/style.css";
 // import Header from './common/appHeader'
 // import Headerxs from './common/appHeaderxs'
 
-// import Footer from './common/footer'
+import Footer from "./components/FooterPage"
 import axios from "axios";
 // import store from './store'
 
 export default {
   name: "App",
 
-  // components: {
-  //   // HelloWorld,
-  //   Header,
-  //   Footer,
-  //   // Headerxs
+  components: {
+    Footer,
 
-  // },
+  },
 
   beforeMount() {
     if (typeof localStorage.getItem("token") == "string") {

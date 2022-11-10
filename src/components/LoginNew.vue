@@ -29,7 +29,7 @@
                 <v-flex py-2>Passsword</v-flex>
                 <v-text-field type="password" v-model="password" placeholder="Password" solo></v-text-field>
                 <v-btn block color="hsl(195, 65%, 29%)" large tile @click="putdata()"
-                  >CONTINUE
+                  class="white--text">CONTINUE
                 </v-btn>
               </v-card>
             </v-card>
