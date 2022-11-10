@@ -15,7 +15,6 @@
               @input="getData()"
               outlined
               v-model="search"
-              
             >
             </v-text-field>
           </v-card-title>
@@ -43,16 +42,26 @@
                         {{ item.first_name }}&nbsp;&nbsp;
                         {{ item.last_name }}
                       </td>
-                      <td >{{ item.phone }}</td>
+                      <td>{{ item.phone }}</td>
 
-                      <td><router-link
-                    :to="'/page5?id=' + item._id"
-                    style="text-decoration: none"
-                  >
-                        <v-btn icon ><v-icon color="blue" >mdi-account-eye</v-icon></v-btn>
-                        </router-link></td>
+                      <td>
+                        <router-link
+                          :to="'/page5?id=' + item._id"
+                          style="text-decoration: none"
+                        >
+                          <v-btn icon
+                            ><v-icon color="blue"
+                              >mdi-account-eye</v-icon
+                            ></v-btn
+                          >
+                        </router-link>
+                      </td>
 
-                      <td><v-btn icon ><v-icon color="red">mdi-delete-empty</v-icon></v-btn></td>
+                      <td>
+                        <v-btn icon
+                          ><v-icon color="red">mdi-delete-empty</v-icon></v-btn
+                        >
+                      </td>
                     </tr>
                   </tbody>
                 </template>
@@ -60,6 +69,11 @@
             </v-flex>
           </v-layout>
         </v-card>
+        <v-layout wrap pt-3 pb-2>
+          <v-flex xs12 text-center>
+            <v-pagination v-model="page" :length="4" circle></v-pagination>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
   </div>
@@ -72,17 +86,18 @@ export default {
     return {
       user: [],
       search: null,
+      page: 1,
     };
   },
 
   mounted() {
     this.getData();
   },
- watch: {
+  watch: {
     search() {
       this.getData();
     },
- },
+  },
   methods: {
     getData() {
       // localStorage.setItem("fromDateE", this.fromDate);
@@ -118,7 +133,6 @@ export default {
           console.log(err);
         });
     },
-    
   },
 };
 </script>

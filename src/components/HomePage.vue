@@ -7,7 +7,7 @@
           v-model="sidebar"
           clipped
           width="100%"
-          height="100%"
+          height="33cm"
           permanent
           color="rgb(21, 95, 117)"
         >
