@@ -12,7 +12,7 @@
                   <v-flex lg4>OUR VISION</v-flex>
                 </v-layout>
               </v-flex>
-              <v-flex lg2 font>
+              <v-flex lg2 font >
                 <h1>MYSORE</h1>
               </v-flex>
               <v-flex lg5>
@@ -31,7 +31,7 @@
             <v-flex lg12 xs12>
               <v-img src="../assets/6.jpg" max-width="100%" height="840px">
                 <v-layout wrap>
-                  <v-flex pt-5 lg12 class="fn3">
+                  <v-flex pt-5 lg12 class="fn3 tracking-in-contract-bck" >
                     <center>
                       <h1 class="fn2">Palace</h1>
                       <h2>
@@ -41,7 +41,7 @@
                       <h1 class="fn2">Mysuru</h1>
                     </center>
                   </v-flex>
-                  <v-flex lg12 style="color: white" class="fn4">
+                  <v-flex lg12 style="color: white" class="fn4 tracking-in-expand-fwd" >
                     <center>
                       <br />The Mysore Palace is a historical palace and the
                       royal residence at Mysore in the<br />
@@ -67,7 +67,7 @@
             <!-- <v-flex lg4 v-for="item in 3" :key="item"> -->
             <!--For LooP-->
             <v-flex lg4>
-              <v-card flat class="mx-9">
+              <v-card flat class="mx-9 slide-in-left ">
                 <v-layout wrap>
                   <v-flex xs12>
                     <v-img src="../assets/2.1.jpg"></v-img>

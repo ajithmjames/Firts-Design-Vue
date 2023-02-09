@@ -7,13 +7,13 @@ let router = new Router({
   mode: "history",
   routes: [
     {
-      path: "/",
+      path: "/log",
       name:"login",
       props: true,
       component: () => import("./components/LoginNew"),
       },
       {
-        path: "/my",
+        path: "/",
         name:"Page",
         props: true,
         component: () => import("./components/MysorePage"),
@@ -57,6 +57,42 @@ let router = new Router({
           ]
         
         },
+        {
+          path: "/parll",
+          name:"parall",
+          props: true,
+          component: () => import("./components/ParallaxPage"),
+          },
+        {
+          path: "/parl",
+          name:"parl",
+          props: true,
+          component: () => import("./components/ParalLax"),
+          },
+        {
+          path: "/ls",
+          name:"ls",
+          props: true,
+          component: () => import("./components/login/loginSample"),
+          },
+        {
+          path: "/servererror",
+          name:"servererror",
+          props: true,
+          component: () => import("./components/500PagE"),
+          },
+        {
+          path: "/sas",
+          name:"sass",
+          props: true,
+          component: () => import("./components/SasssPage"),
+          },
+        {
+          path: "/particle",
+          name:"part",
+          props: true,
+          component: () => import("./components/ParticlesCursor"),
+          },
 
 
 
