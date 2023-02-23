@@ -29,7 +29,7 @@
         <v-flex xs12>
           <v-layout wrap style="width: 100%">
             <v-flex lg12 xs12>
-              <v-img src="../assets/6.jpg" max-width="100%" height="840px">
+              <v-img src="../assets/6.jpg" max-width="100%" height="840px"> 
                 <v-layout wrap>
                   <v-flex pt-5 lg12 class="fn3 tracking-in-contract-bck" >
                     <center>
@@ -88,7 +88,7 @@
               </v-card>
             </v-flex>
             <v-flex lg4>
-              <v-card flat class="mx-9">
+              <v-card flat class="mx-9 slide-in-bottom">
                 <v-layout wrap>
                   <v-flex xs12>
                     <v-img src="../assets/2.2.jpg"></v-img>
@@ -109,7 +109,7 @@
               </v-card>
             </v-flex>
             <v-flex lg4>
-              <v-card flat class="mx-9">
+              <v-card flat class="mx-9 slide-in-right">
                 <v-layout wrap>
                   <v-flex xs12>
                     <v-img src="../assets/2.3.jpg"></v-img>
@@ -499,3 +499,13 @@
     </div>
   </v-app>
 </template>
+<script>
+export default {
+  data () {
+
+  },
+  methods:{
+    
+  }
+}
+</script>

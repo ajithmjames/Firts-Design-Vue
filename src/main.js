@@ -5,6 +5,7 @@ import router from './router';
 import  store from './store';
 import axios from 'axios';
 import 'atropos/css'
+import "./components/MadeImage"
 
 // import ServerError from './common/500'
 // Vue.component('ServerError', ServerError)

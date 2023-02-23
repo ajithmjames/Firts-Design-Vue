@@ -20,9 +20,11 @@
       <Header v-if="$route.name!= 'login'"/>
       <!-- <Headerxs/> -->
 
-   
 
-      <router-view> </router-view>
+      
+      <router-view> 
+        
+      </router-view>
       <Footer />
     </v-main>
   </v-app>
@@ -30,6 +32,9 @@
 <script>
 // import HelloWorld from './components/HelloWorld';
 import "./assets/style.css";
+import "./components/MyStyle.scss"
+
+
 
 // import Atropos from 'atropos';
 
@@ -44,7 +49,6 @@ export default {
   name: "App",
 
   components: {
-    
     Footer,
     
   },

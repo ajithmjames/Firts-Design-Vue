@@ -93,6 +93,18 @@ let router = new Router({
           props: true,
           component: () => import("./components/ParticlesCursor"),
           },
+        {
+          path: "/scroll",
+          name:"scroll",
+          props: true,
+          component: () => import("./components/ScrollPage"),
+          },
+        {
+          path: "/IM",
+          name:"IM",
+          props: true,
+          component: () => import("./components/ImageOverlay"),
+          },
 
 
 
