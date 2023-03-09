@@ -9,6 +9,8 @@
           width="100%"
           height="33cm"
           permanent
+
+          
           color="rgb(21, 95, 117)"
         >
           <v-list >
